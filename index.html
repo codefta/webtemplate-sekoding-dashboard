@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sekoding - Dashboard</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+        <a class="navbar-brand text-success" href="#">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav ml-auto">
+                <div class="dropdown">
+                    <a class="nav-item nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        <span class="fas fa-bell"></span>
+                        <span class="badge badge-success badge-notify">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton">
+                        nothing
+                        <div class="card-footer"><small class="text-muted">Nothing</small></div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-item nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        <span class="fas fa-user-circle"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-briefcase"></i>
+                            Other
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pt-3 pb-2">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-success mb-2">
+                            <span>Dashboard</span>
+                        </button>
+                        <form class="form-inline search">
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+                            
+                            <button type="submit" class="btn btn-secondary mb-2">Submit</button>
+                        </form>
+                    </div>
+                </nav>
+
+                <!-- content field -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <div class="card shadow-sm">
+                                <div class="card-title">
+                                    <div class="card-body bg-light">
+                                        <h3>title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada nulla nisi. Aenean sagittis dolor turpis, et fermentum augue lobortis et. Aliquam justo justo, accumsan nec est in, egestas fermentum massa. Phasellus ac dui feugiat, imperdiet enim eu, iaculis urna. Suspendisse a tempor sapien. Maecenas at mattis leo. Sed hendrerit risus eu auctor semper. Praesent ac dapibus sem. Sed suscipit eros nec blandit aliquam. Morbi vel pretium nisl, id blandit libero. Praesent id velit faucibus, consectetur ligula ac, dapibus velit. Morbi neque est, lacinia lacinia dui a, porttitor tempus erat. Phasellus urna elit, aliquet ac luctus vitae, ultricies sed nisl.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card shadow-sm">
+                                <div class="card-title">
+                                    <div class="card-body bg-light">
+                                        <h3>title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada nulla nisi. Aenean sagittis dolor turpis, et fermentum augue lobortis et. Aliquam justo justo, accumsan nec est in, egestas fermentum massa. Phasellus ac dui feugiat, imperdiet enim eu, iaculis urna. Suspendisse a tempor sapien. Maecenas at mattis leo. Sed hendrerit risus eu auctor semper. Praesent ac dapibus sem. Sed suscipit eros nec blandit aliquam. Morbi vel pretium nisl, id blandit libero. Praesent id velit faucibus, consectetur ligula ac, dapibus velit. Morbi neque est, lacinia lacinia dui a, porttitor tempus erat. Phasellus urna elit, aliquet ac luctus vitae, ultricies sed nisl.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card shadow-sm">
+                                <div class="card-title">
+                                    <div class="card-body bg-light">
+                                        <h3>title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada nulla nisi. Aenean sagittis dolor turpis, et fermentum augue lobortis et. Aliquam justo justo, accumsan nec est in, egestas fermentum massa. Phasellus ac dui feugiat, imperdiet enim eu, iaculis urna. Suspendisse a tempor sapien. Maecenas at mattis leo. Sed hendrerit risus eu auctor semper. Praesent ac dapibus sem. Sed suscipit eros nec blandit aliquam. Morbi vel pretium nisl, id blandit libero. Praesent id velit faucibus, consectetur ligula ac, dapibus velit. Morbi neque est, lacinia lacinia dui a, porttitor tempus erat. Phasellus urna elit, aliquet ac luctus vitae, ultricies sed nisl.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="card-footer text-center">
+                    Sekoding.com &copy Allright Reserved.
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
